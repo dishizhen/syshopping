@@ -20,7 +20,7 @@ public class GoodsInfo {
     private String unit;
     private Date createTime;
     private Date lastUpdateTime;
-    private String createBy;
+    private String createdBy;
 
     public Integer getId() {
         return id;
@@ -118,11 +118,30 @@ public class GoodsInfo {
         this.lastUpdateTime = lastUpdateTime;
     }
 
-    public String getCreateBy() {
-        return createBy;
+    public String getCreatedBy() {
+        return createdBy;
     }
 
-    public void setCreateBy(String createBy) {
-        this.createBy = createBy;
+    public void setCreatedBy(String createdBy) {
+        this.createdBy = createdBy;
+    }
+
+    @Override
+    public String toString() {
+        return "GoodsInfo{" +
+                "id=" + id +
+                ", goodsSN='" + goodsSN + '\'' +
+                ", goodsName='" + goodsName + '\'' +
+                ", goodsFormat='" + goodsFormat + '\'' +
+                ", marketPrice=" + marketPrice +
+                ", realPrice=" + realPrice +
+                ", state=" + state +
+                ", note='" + note + '\'' +
+                ", num=" + num +
+                ", unit='" + unit + '\'' +
+                ", createTime=" + createTime +
+                ", lastUpdateTime=" + lastUpdateTime +
+                ", createdBy='" + createdBy + '\'' +
+                '}';
     }
 }

@@ -13,6 +13,9 @@ public class PageResult {
      */
     private Integer count;
 
+    //总页数
+    private int totalPage ;
+
     /**
      * 当前页
      */
@@ -41,5 +44,13 @@ public class PageResult {
 
     public void setPage(Integer page) {
         this.page = page;
+    }
+
+    public int getTotalPage() {
+        return totalPage;
+    }
+
+    public void setTotalPage(int totalPage) {
+        this.totalPage = totalPage;
     }
 }

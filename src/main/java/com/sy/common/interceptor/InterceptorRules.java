@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class InterceptorRules implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        System.out.println("==============================");
+
         //注册拦截器
         InterceptorRegistration interceptorRegistration = registry.addInterceptor(new CORSInterceptor());
         //拦截路径
